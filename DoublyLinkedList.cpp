@@ -58,6 +58,11 @@ class double_llist
             cin>>element;
             cout<<"Insert Element after postion: ";
             cin>>position;
+            if(position<=0)
+            {
+            	cout<<"Invalid position";
+            	break;
+			}
             dl.add_after(element, position);
             cout<<endl;
             break;
