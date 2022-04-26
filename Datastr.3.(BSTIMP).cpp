@@ -32,32 +32,32 @@ int main()
  node *temp; 
  while (1) 
  { 
- cout<<"-----------------"<<endl; 
- cout<<"Operations on BST"<<endl; 
- cout<<"-----------------"<<endl; 
- cout<<"1.Insert Element "<<endl; 
- cout<<"2.Delete Element "<<endl; 
- cout<<"3.Inorder Traversal"<<endl; 
- cout<<"4.Preorder Traversal"<<endl; 
- cout<<"5.Postorder Traversal"<<endl; 
- cout<<"6.Display"<<endl; 
- cout<<"7.Quit"<<endl; 
- cout<<"Enter your choice : "; 
- cin>>choice; 
+    cout<<"-----------------"<<endl; 
+    cout<<"Operations on BST"<<endl; 
+    cout<<"-----------------"<<endl; 
+    cout<<"1.Insert Element "<<endl; 
+    cout<<"2.Delete Element "<<endl; 
+    cout<<"3.Inorder Traversal"<<endl; 
+    cout<<"4.Preorder Traversal"<<endl; 
+    cout<<"5.Postorder Traversal"<<endl; 
+    cout<<"6.Display"<<endl; 
+    cout<<"7.Quit"<<endl; 
+    cout<<"Enter your choice : "; 
+    cin>>choice; 
  switch(choice) 
  { 
- case 1: 
- temp = new node; 
- cout<<"Enter the number to be inserted : "; 
- cin>>temp->info; 
- bst.insert(root, temp); 
- break; 
- case 2: 
- if (root == NULL) 
- { 
- cout<<"Tree is empty, nothing to delete"<<endl; 
- continue; 
- } 
+    case 1: 
+    temp = new node; 
+    cout<<"Enter the number to be inserted : "; 
+    cin>>temp->info; 
+    bst.insert(root, temp); 
+    break; 
+    case 2: 
+    if (root == NULL) 
+    { 
+      cout<<"Tree is empty, nothing to delete"<<endl; 
+      continue; 
+    } 
  cout<<"Enter the number to be deleted : "; 
  cin>>num; 
  bst.del(num); 
