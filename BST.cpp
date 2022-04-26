@@ -23,8 +23,8 @@ class BST
  	 BST() 
  	 { 
 		root = NULL; 
-     } 
-}; 
+         } 
+ }; 
 int main() 
 { 
 	 int choice, num; 
@@ -44,7 +44,7 @@ int main()
 		 cout<<"7.Quit"<<endl; 
 		 cout<<"Enter your choice : "; 
 		 cin>>choice; 
-         switch(choice) 
+                 switch(choice) 
 		 { 
 			 case 1: 
 			 temp = new node; 
@@ -86,8 +86,8 @@ int main()
 			 exit(1); 
 			 default: 
 			 cout<<"Wrong choice"<<endl; 
-	     } 
-	 } 
+	         } 
+       } 
 } 
 void BST::find(int item, node **par, node **loc) 
 { 
@@ -125,7 +125,7 @@ void BST::find(int item, node **par, node **loc)
     } 
 	 *loc = NULL; 
 	 *par = ptrsave; 
-} 
+ } 
 
 void BST::insert(node *tree, node *newnode) 
 { 
@@ -140,8 +140,8 @@ void BST::insert(node *tree, node *newnode)
  } 
  if (tree->info == newnode->info) 
  { 
- cout<<"Element already in the tree"<<endl; 
- return; 
+   cout<<"Element already in the tree"<<endl; 
+   return; 
  } 
  if (tree->info > newnode->info) 
  { 
